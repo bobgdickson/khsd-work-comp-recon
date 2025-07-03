@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from app.api.api_v1.api import api_router
+from app.routes.excel import router
 from app.core.config import settings
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
-app.include_router(api_router, prefix="/api/v1")
+app.include_router(router, prefix="/api", tags=["excel"])

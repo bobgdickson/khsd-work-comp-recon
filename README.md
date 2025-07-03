@@ -56,9 +56,9 @@ Response:
 └── app/
     ├── main.py
     ├── core/
-    ├── db/
-    ├── models/
-    ├── schemas/
+    ├── db.py
+    ├── models.py
+    ├── schemas.py
     ├── services/
-    └── api/
+    └── routes/
 ```
